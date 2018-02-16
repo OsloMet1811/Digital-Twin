@@ -1,9 +1,13 @@
-# Motion capture feedback and setpoint to Intel Aero drone
-==========================================================
+Motion capture feedback and setpoint to Intel Aero drone
+========================================================
+
 Here we try to document our road from out of the box Intel Aero drone, to a working motion capture feedback loop used to correct the position of the intel aero drone, and make it hold its pose.
 
-## Prerequisites
-----------------
+The Optitrack Motion capture software, Motive Tracker, will stream pose data over the VRPN protocol (Virtual Reality 
+
+Prerequisites
+-------------
+
 ### Hardware
 * Intel Aero Ready To Fly Drone
 * Optitrack Motion Capture System
@@ -14,7 +18,9 @@ Here we try to document our road from out of the box Intel Aero drone, to a work
 * Ubuntu 16.04
 * ROS Kinetic
 
-## Getting started
+Getting started
+---------------
+
 For in-depth description and explanation regarding Intel Aero Drone, its systems and the physical drone, see their [comprehensive wiki-page](https://github.com/intel-aero/meta-intel-aero/wiki)
 
 For tutorials on ROS, see http://wiki.ros.org/ROS/Tutorials
