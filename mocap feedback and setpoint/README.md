@@ -32,13 +32,26 @@ For in-depth description and explanation regarding Intel Aero Drone, its systems
 For tutorials on ROS, see http://wiki.ros.org/ROS/Tutorials
 
 ### 1. Install required software
-* Install Ubuntu 16.04: https://help.ubuntu.com/lts/installation-guide/index.html
-* Install ROS Kinetic: http://wiki.ros.org/kinetic/Installation/Ubuntu and create catkin workspace: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
-* Install QGroundControl: https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html
+* Install Ubuntu 16.04, https://help.ubuntu.com/lts/installation-guide/index.html
+* Install ROS Kinetic, http://wiki.ros.org/kinetic/Installation/Ubuntu and create catkin workspace. http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+* Install QGroundControl, https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html
 * Install ROS package VRPN client ROS, http://wiki.ros.org/vrpn_client_ros
 * Install ROS package mavros, https://github.com/mavlink/mavros/blob/master/mavros/README.md#installation
 
-### 2. Flashing and calibrating drone
-Intel provides a step by step tutorial of getting the Intel Aero drone up and running. Start by flash and calibration of the drone. https://github.com/intel-aero/meta-intel-aero/wiki/02-Initial-Setup)
+### 2. Flash and calibrate drone
+Intel provides a step by step tutorial of getting the Intel Aero drone up and running. Start by flash and calibration of the drone, https://github.com/intel-aero/meta-intel-aero/wiki/02-Initial-Setup
 
-### 3. 
+### 3. Enable and and tune px4 parameters
+* Switch state estimator to LPE, https://dev.px4.io/en/advanced/switching_state_estimators.html
+* Enable external pose input, https://dev.px4.io/en/ros/external_position_estimation.html#enabling-external-pose-input
+* Disable baro fusion, https://dev.px4.io/en/ros/external_position_estimation.html#disabling-barometer-fusion
+* Tune/reduce parameters, https://dev.px4.io/en/ros/external_position_estimation.html#tuning-noise-parameters
+
+### 4. Clone and install drone_mocap ROS package
+Clone ROS package and build catkin.
+'''
+cd ~catkin/src
+git clone https://github.com/mathsten/OsloMet-Bachelorproject-1811
+cd ..
+catkin_make
+'''
