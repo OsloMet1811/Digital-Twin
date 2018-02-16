@@ -21,16 +21,19 @@ Prerequisites
 Getting started
 ---------------
 
-For in-depth description and explanation regarding Intel Aero Drone, its systems and the physical drone, see their [comprehensive wiki-page](https://github.com/intel-aero/meta-intel-aero/wiki)
+For in-depth description and explanation regarding Intel Aero Drone, its systems and the physical drone, see their comprehensive wiki-page, https://github.com/intel-aero/meta-intel-aero/wiki
 
 For tutorials on ROS, see http://wiki.ros.org/ROS/Tutorials
 
 ### 1. Install required software
-* Install Ubuntu 16.04 https://help.ubuntu.com/lts/installation-guide/index.html
-* Install ROS Kinetic http://wiki.ros.org/kinetic/Installation/Ubuntu and create catkin workspace http://wiki.ros.org/catkin/Tutorials/create_a_workspace
-* Install QGroundControl
+* Install Ubuntu 16.04
+https://help.ubuntu.com/lts/installation-guide/index.html
+* Install ROS Kinetic 
+http://wiki.ros.org/kinetic/Installation/Ubuntu and create catkin workspace http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+* Install QGroundControl 
+https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html
 
 ### 2. Flashing and calibrating drone
-Intel provides a step by step tutorial of getting the Intel Aero drone up and running. [Start by flash and calibration of the drone.](https://github.com/intel-aero/meta-intel-aero/wiki/02-Initial-Setup)
+Intel provides a step by step tutorial of getting the Intel Aero drone up and running. Start by flash and calibration of the drone. https://github.com/intel-aero/meta-intel-aero/wiki/02-Initial-Setup)
 
 ### 3. 
