@@ -58,19 +58,19 @@ catkin_make
 
 First autonomous flight
 ---------
-### Map a kill switch on the RC transmitter
+### 1. Map a kill-switch to the RC transmitter
 
-### Configure Motive Tracker
+### 2. Configure Motive Tracker
 #### Calibrate the Optitrack system
 
 #### Create rigid body
 
 #### Enable VRPN streaming
 
-### Run VPRN Client ROS node
+### 3. VPRN Client ROS node
 
-### Run mavros node
+### 4. Mavros node
 
 ### Forward motion capture data
 
-### 
+### 5. Drone_mocap node
