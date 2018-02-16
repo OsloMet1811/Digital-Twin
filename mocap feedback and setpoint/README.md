@@ -27,9 +27,7 @@ Prerequisites
 Getting started
 ---------------
 
-For in-depth description and explanation regarding Intel Aero Drone, its systems and the physical drone, see their comprehensive wiki-page, https://github.com/intel-aero/meta-intel-aero/wiki
-
-For tutorials on ROS, see http://wiki.ros.org/ROS/Tutorials
+For in-depth description and explanation regarding Intel Aero Drone, its systems and the physical drone, see their comprehensive wiki-page, https://github.com/intel-aero/meta-intel-aero/wiki. For tutorials on ROS, see http://wiki.ros.org/ROS/Tutorials
 
 ### 1. Install required software
 * Install Ubuntu 16.04, https://help.ubuntu.com/lts/installation-guide/index.html
@@ -55,3 +53,7 @@ git clone https://github.com/mathsten/OsloMet-Bachelorproject-1811
 cd ..
 catkin_make
 ```
+
+Launching
+---------
+### 1. Calibrate Motive Tracker, create rigid body, and enable VPRN stream
