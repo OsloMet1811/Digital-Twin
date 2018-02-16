@@ -24,6 +24,7 @@ Prerequisites
 * VPRN Client ROS 
 * Mavros
 
+
 Getting started
 ---------------
 
@@ -54,6 +55,22 @@ cd ..
 catkin_make
 ```
 
-Launching
+
+First autonomous flight
 ---------
-### 1. Calibrate Motive Tracker, create rigid body, and enable VPRN stream
+### Map a kill switch on the RC transmitter
+
+### Configure Motive Tracker
+#### Calibrate the Optitrack system
+
+#### Create rigid body
+
+#### Enable VRPN streaming
+
+### Run VPRN Client ROS node
+
+### Run mavros node
+
+### Forward motion capture data
+
+### 
