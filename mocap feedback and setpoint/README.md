@@ -49,9 +49,10 @@ Intel provides a step by step tutorial of getting the Intel Aero drone up and ru
 ### 4. Clone and install drone_mocap ROS package
 Clone ROS package and build catkin.
 ```
-cd ~/catkin/src
-git clone https://github.com/mathsten/OsloMet-Bachelorproject-1811
-cd ..
+cd ~
+git clone https://github.com/mathsten/OsloMet-Digital-Twin.git
+cp -a OsloMet-Digital-Twin/mocap feedback and setpoint/. catkin_ws/src/drone_mocap
+cd catkin_ws/
 catkin_make
 ```
 
