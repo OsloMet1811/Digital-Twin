@@ -55,7 +55,6 @@ cd ..
 catkin_make
 ```
 
-
 First autonomous flight
 ---------
 ### 1. Map a kill-switch to the RC transmitter
