@@ -56,18 +56,22 @@ cd catkin_ws/
 catkin_make
 ```
 
+
 First autonomous flight
 ---------
+
 ### 1. Map a kill-switch to the RC transmitter
+This is an important step since there will always be some uncertainty regarding the real life behaviour of the autonomous system in action. 
 
 ### 2. Configure Motive Tracker
-On Optitrack and Motive configuration see [OptiTrack Documentation Wiki](https://v20.wiki.optitrack.com/index.php?title=OptiTrack_Documentation_Wiki).
-#### Calibrate the Optitrack system
-[OptiTrack calibration](https://v20.wiki.optitrack.com/index.php?title=Calibration)
-#### Create rigid body
-[Rigid Body Tracking](https://v20.wiki.optitrack.com/index.php?title=Rigid_Body_Tracking)
-#### Enable VRPN streaming
-[Data Streaming](https://v20.wiki.optitrack.com/index.php?title=Data_Streaming)
+Optitrack has a great [OptiTrack Documentation Wiki](https://v20.wiki.optitrack.com/index.php?title=OptiTrack_Documentation_Wiki) with videos and in-depth pages for there system.
+
+#### [Calibrate the Optitrack system](https://v20.wiki.optitrack.com/index.php?title=Calibration)
+
+#### [Create and track rigid Body](https://v20.wiki.optitrack.com/index.php?title=Rigid_Body_Tracking)
+
+#### [Enable VRPN streaming](https://v20.wiki.optitrack.com/index.php?title=Data_Streaming)
+
 ### 3. VPRN Client ROS node
 
 ### 4. Mavros node
