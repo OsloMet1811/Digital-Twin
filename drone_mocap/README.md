@@ -72,7 +72,7 @@ Optitrack has a great [OptiTrack Documentation Wiki](https://v20.wiki.optitrack.
 
 ### 3. Run vrpn node, mavros node and drone_mocap node
 ```
-#Some parameters: server, fcu_url, gcs_url, drone_setpoint/x, drone_setpoint/y, drone_setpoint/z
+# Some parameters: server, fcu_url, gcs_url, drone_setpoint/x, drone_setpoint/y, drone_setpoint/z
 roslaunch drone_mocap drone_mocap.launch
 
 ```
