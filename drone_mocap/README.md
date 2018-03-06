@@ -51,7 +51,7 @@ Clone ROS package and build catkin.
 ```
 cd ~
 git clone https://github.com/mathsten/OsloMet-Digital-Twin.git
-cp -a OsloMet-Digital-Twin/mocap feedback and setpoint/. catkin_ws/src/drone_mocap
+cp -a OsloMet-Digital-Twin/drone_mocap/. catkin_ws/src/drone_mocap
 cd catkin_ws/
 catkin_make
 ```
