@@ -1,7 +1,7 @@
 /**
  * @file offb_node.cpp
- * @brief Offboard control example node, written with MAVROS version 0.19.x, PX4 Pro Flight
- * Stack and tested in Gazebo SITL
+ * @brief Offboard control example node
+ * Based on PX4 developement example
  */
 
 #include <ros/ros.h>
@@ -17,7 +17,7 @@ void state_cb(const mavros_msgs::State::ConstPtr& msg){
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "px4_offboard_example");
+    ros::init(argc, argv, "offb_node");
     ros::NodeHandle nh;
 
     ros::Subscriber state_sub = nh.subscribe<mavros_msgs::State>
@@ -32,6 +32,17 @@ int main(int argc, char **argv)
     //the setpoint publishing rate MUST be faster than 2Hz
     ros::Rate rate(20.0);
 
+    float setpoint_x = 0;
+    float setpoint_y = 0;
+    float setpoint_z = 0;
+
+    //get setpoint from launch file
+    nh.getParam("/offb_node/drone_setpoint/x", setpoint_x);
+    nh.getParam("/offb_node/drone_setpoint/y", setpoint_y);
+    nh.getParam("/offb_node/drone_setpoint/z", setpoint_z);
+
+    ROS_INFO("Got setpoint: [%.2f, %.2f, %.2f]", setpoint_x, setpoint_y, setpoint_z);
+
     // wait for FCU connection
     while(ros::ok() && !current_state.connected){
         ros::spinOnce();
@@ -39,9 +50,9 @@ int main(int argc, char **argv)
     }
 
     geometry_msgs::PoseStamped pose;
-    pose.pose.position.x = 0;
-    pose.pose.position.y = 0;
-    pose.pose.position.z = 2;
+    pose.pose.position.x = setpoint_x;
+    pose.pose.position.y = setpoint_y;
+    pose.pose.position.z = setpoint_z;
 
     //send a few setpoints before starting
     for(int i = 100; ros::ok() && i > 0; --i){
