@@ -70,15 +70,13 @@ Optitrack has a great [OptiTrack Documentation Wiki](https://v20.wiki.optitrack.
 * [Create and track rigid Body](https://v20.wiki.optitrack.com/index.php?title=Rigid_Body_Tracking)
 * [Enable VRPN streaming](https://v20.wiki.optitrack.com/index.php?title=Data_Streaming)
 
-### 3. Run vrpn node, mavros node and drone_mocap node
+### 3. Checking QGroundControl parameters
+
+
+### 4. Run vrpn node, mavros node and drone_mocap node
 ```sh
 # Some parameters: server, fcu_url, gcs_url, drone_setpoint/x, drone_setpoint/y, drone_setpoint/z
 roslaunch drone_mocap drone_mocap.launch
 
 ```
 
-### 4. Mavros node
-
-### Forward motion capture data
-
-### 5. Drone_mocap node
