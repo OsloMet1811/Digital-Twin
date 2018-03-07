@@ -83,8 +83,15 @@ catkin_make
 First autonomous flight
 ---------
 
-### 1. Map a kill-switch to the RC transmitter
+### 1. Safety measures
+#### Map a kill-switch to the RC transmitter
 This is an important step since there will always be some uncertainty regarding the real life behaviour of the autonomous system in action. The steps is the same as for [mapping any flight mode.](https://docs.px4.io/en/config/flight_mode.html)
+
+#### Turn off hibernate on ROS computer
+In one of our tests, our flight time was so long that the ROS computer began to hibernate. This resulted in instantaneous loss of signal, where the drone crashed, before the the software switch from offboard flight mode to stabilize flight mode (as supposed to) and the quad flew into the air uncontrolable.
+
+#### Physical safety measures
+Consider using a net to protect from uncontrolable drones and/or some kind of string from the drone to the ground to limit its range.
 
 ### 2. Configure Motive Tracker
 Optitrack has a great [OptiTrack Documentation Wiki](https://v20.wiki.optitrack.com/index.php?title=OptiTrack_Documentation_Wiki) with videos and in-depth pages for there system. Calibrating the system, create rigid bodies and enable vrpn streaming will be most important for this project.
