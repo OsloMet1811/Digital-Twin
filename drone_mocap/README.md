@@ -7,6 +7,13 @@ The Optitrack Motion capture software, Motive Tracker, will stream pose data of 
 
 When this is done, we will use our own ROS package, running a c++ script, enabling the px4 flight mode OFFBOARD, arming it and set the Setpoint of the drone.
 
+Table of contents
+-----------------
+1. Prerequisites
+2. Getting started
+3. First autonomous flight
+4. Results
+
 Prerequisites
 -------------
 
