@@ -35,6 +35,9 @@ For in-depth description and explanation regarding Intel Aero Drone, its systems
 * [Install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu) and [create catkin workspace.]( http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
 * [Install QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
 * [Install ROS package VRPN client ROS](http://wiki.ros.org/vrpn_client_ros)
+```sh
+sudo apt-get install ros-indigo-vrpn-client-ros
+```
 * [Install ROS package mavros](https://github.com/mavlink/mavros/blob/master/mavros/README.md#installation)
 
 ### 2. Flash and calibrate drone
