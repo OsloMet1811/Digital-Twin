@@ -11,10 +11,10 @@ When this is done, we will use our own ROS package, running a c++ script, enabli
 Table of contents
 -----------------
 
-1. [Prerequisites](#Prerequisites)
-2. [Getting started](#)
-3. [First autonomous flight]
-4. [Results]
+1. [Prerequisites](#prerequisites)
+2. [Getting started](#getting-started)
+3. [First autonomous flight](#first-autonomous-flight)
+4. [Results](#result)
  
  
 Prerequisites
