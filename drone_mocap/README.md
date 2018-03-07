@@ -62,6 +62,8 @@ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/inst
 Intel provides a step by step tutorial of getting the Intel Aero drone up and running. Start by flash and calibration of the drone, https://github.com/intel-aero/meta-intel-aero/wiki/02-Initial-Setup
 
 ### 3. Enable and and tune px4 parameters
+There is necessary to tune som parameters in the px4 flight control software. This is done with QGroundControl.
+
 * [Switch state estimator to LPE](https://dev.px4.io/en/advanced/switching_state_estimators.html)
 * [Enable external pose input](https://dev.px4.io/en/ros/external_position_estimation.html#enabling-external-pose-input)
 * [Disable baro fusion](https://dev.px4.io/en/ros/external_position_estimation.html#disabling-barometer-fusion)
