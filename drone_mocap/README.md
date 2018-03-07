@@ -42,23 +42,50 @@ For in-depth description and explanation regarding Intel Aero Drone, its systems
 
 ### 1. Install required software
 
-#### [Install Ubuntu 16.04](https://help.ubuntu.com/lts/installation-guide/index.html)
+#### Ubuntu 16.04
+[Install Ubuntu 16.04](https://help.ubuntu.com/lts/installation-guide/index.html)
 
-#### [Install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu) and [create catkin workspace.]( http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
-
-#### [Download QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html)
+#### ROS Kinetic
+[Install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 ```sh
-# Make it executable and launch QGgroundControl
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+
+sudo apt-get update
+sudo apt-get install ros-kinetic-desktop-full
+
+sudo rosdep init
+rosdep update
+
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
+and [create catkin workspace.](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
+```sh
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+catkin_make
+
+source devel/setup.bash
+```
+
+#### QGroundControl
+[Download QGroundControl](https://docs.qgroundcontrol.com/en/getting_started/download_and_install.html). Make it executable and launch QGgroundControl.
+```sh
 chmod +x ./QGroundControl.AppImage
 ./QGroundControl.AppImage  (or double click)
 ```
 
-#### [Install ROS package VRPN client ROS](http://wiki.ros.org/vrpn_client_ros) 
+#### VPRN client 
+[Install ROS package VRPN client ROS](http://wiki.ros.org/vrpn_client_ros) 
 ```sh
 sudo apt-get install ros-kinetic-vrpn-client-ros
 ```
 
-#### [Install ROS package mavros](https://github.com/mavlink/mavros/blob/master/mavros/README.md#installation)
+#### Mavros 
+[Install ROS package mavros](https://github.com/mavlink/mavros/blob/master/mavros/README.md#installation)
 ```sh
 # Mavros ROS package
 sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
