@@ -93,10 +93,13 @@ Optitrack has a great [OptiTrack Documentation Wiki](https://v20.wiki.optitrack.
 * [Create and track rigid Body](https://v20.wiki.optitrack.com/index.php?title=Rigid_Body_Tracking)
 * [Enable VRPN streaming](https://v20.wiki.optitrack.com/index.php?title=Data_Streaming)
 
-### 3. Checking QGroundControl parameters
+### 3. Setup two wifi connections
+At this point you will have to connect to both the network the Motive Tracker software is on, and the local network the Intel Aero Drone creates. The Motive Tracker network to receive pose data, and the Intel local network to communicate with the drone.
+
+### 4. Checking QGroundControl parameters
 
 
-### 4. Run vrpn node, mavros node and drone_mocap node
+### 5. Run vrpn node, mavros node and drone_mocap node
 ```sh
 # Some parameters: server, fcu_url, gcs_url, drone_setpoint/x, drone_setpoint/y, drone_setpoint/z
 roslaunch drone_mocap drone_mocap.launch
