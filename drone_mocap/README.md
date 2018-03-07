@@ -6,16 +6,19 @@ Here we try to document our road from out of the box Intel Aero drone, to a work
 The Optitrack Motion capture software, Motive Tracker, will stream pose data of the registered rigid-bodies over VRPN. This will be received by a VRPN ROS node and redirected to the correct topic. The MAVROS ROS node is used to communicate with the px4 autopilot software in the drone, using the MAVlink protocol. With the QGroundControl, a interface for the px4 software, we will enable the use of motion capture data, and disable the use of  e.g. gyro and gps. This will render the Intel drone completely dependent on the motion capture data for determining its position, as the mocap system is very accurate (< 0.2 mm).
 
 When this is done, we will use our own ROS package, running a c++ script, enabling the px4 flight mode OFFBOARD, arming it and set the Setpoint of the drone.
-
+ 
+ 
 Table of contents
-=================
+-----------------
+
 1. Prerequisites
 2. Getting started
 3. First autonomous flight
 4. Results
-
+ 
+ 
 Prerequisites
-=============
+-------------
 
 ### Hardware
 * Intel Aero Ready To Fly Drone
@@ -30,10 +33,10 @@ Prerequisites
 ### ROS packages
 * VPRN Client ROS 
 * Mavros
-
-
+ 
+ 
 Getting started
-===============
+---------------
 
 For in-depth description and explanation regarding Intel Aero Drone, its systems and the physical drone, see their comprehensive wiki-page, https://github.com/intel-aero/meta-intel-aero/wiki. For tutorials on ROS, see http://wiki.ros.org/ROS/Tutorials
 
