@@ -8,14 +8,14 @@ The Optitrack Motion capture software, Motive Tracker, will stream pose data of 
 When this is done, we will use our own ROS package, running a c++ script, enabling the px4 flight mode OFFBOARD, arming it and set the Setpoint of the drone.
 
 Table of contents
------------------
+=================
 1. Prerequisites
 2. Getting started
 3. First autonomous flight
 4. Results
 
 Prerequisites
--------------
+=============
 
 ### Hardware
 * Intel Aero Ready To Fly Drone
@@ -33,7 +33,7 @@ Prerequisites
 
 
 Getting started
----------------
+===============
 
 For in-depth description and explanation regarding Intel Aero Drone, its systems and the physical drone, see their comprehensive wiki-page, https://github.com/intel-aero/meta-intel-aero/wiki. For tutorials on ROS, see http://wiki.ros.org/ROS/Tutorials
 
