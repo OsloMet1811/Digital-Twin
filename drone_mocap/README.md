@@ -48,18 +48,23 @@ For in-depth description and explanation regarding Intel Aero Drone, its systems
 #### ROS Kinetic
 [Install ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 ```sh
+# Setup your sources.list and set up your keys
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 
+# Installation
 sudo apt-get update
 sudo apt-get install ros-kinetic-desktop-full
 
+# Initialize rosdep
 sudo rosdep init
 rosdep update
 
+# Environment setup
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
+# Dependencies
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential
 ```
 and [create catkin workspace.](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
