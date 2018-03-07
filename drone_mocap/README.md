@@ -79,15 +79,14 @@ chmod +x ./QGroundControl.AppImage
 ```
 
 #### VPRN client 
-[Install ROS package VRPN client ROS](http://wiki.ros.org/vrpn_client_ros) 
+[Install ROS package VRPN client ROS.](http://wiki.ros.org/vrpn_client_ros) 
 ```sh
 sudo apt-get install ros-kinetic-vrpn-client-ros
 ```
 
 #### Mavros 
-[Install ROS package mavros](https://github.com/mavlink/mavros/blob/master/mavros/README.md#installation)
+[Install ROS package mavros.](https://github.com/mavlink/mavros/blob/master/mavros/README.md#installation)
 ```sh
-# Mavros ROS package
 sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
 
 # Mavros is dependent on the GeographicLib datasets
