@@ -1,7 +1,7 @@
 <launch>
 
   <!-- VRPN arguments -->
-  <arg name="server" default="localhost"/>
+  <arg name="server" default="192.168.0.199"/>
   <arg name="pose_topic" default="/vrpn_client_node/Drone_A/pose"/>
 
   <!-- Mavros px4 arguments-->
@@ -15,8 +15,8 @@
   <arg name="fcu_protocol" default="v2.0" />
 
   <!-- offboard drone control arguments -->
-  <arg name="drone_setpoint/x" default="0.2" />
-  <arg name="drone_setpoint/y" default="0.3" />
+  <arg name="drone_setpoint/x" default="0" />
+  <arg name="drone_setpoint/y" default="0" />
   <arg name="drone_setpoint/z" default="0.5" />
 
   <!-- VRPN node -->
@@ -54,7 +54,8 @@
   </node>
 
   <!-- redirect pose data from vrpn topic to mavros topic -->
-  <remap from="$(arg pose_topic)" to="/mavros/mocap/pose"/>
+  <!-- <remap from="/vrpn_client_node/Drone_A/pose" to="/mavros/mocap/pose" /> -->
+  <!-- <node pkg="topic_tools" type="relay" -->
 
   <!-- offboard drone control node -->
   <node pkg="drone_mocap" type="offb_node" name="offb_node" output="screen">
@@ -62,5 +63,7 @@
     <param name="drone_setpoint/y" value="$(arg drone_setpoint/y)" />
     <param name="drone_setpoint/z" value="$(arg drone_setpoint/z)" />
   </node>
+
+  <!-- <node name="record_all_topics" pkg="rosbag" type="record" args="-a" /> -->
 
 </launch>

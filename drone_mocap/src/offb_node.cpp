@@ -32,16 +32,16 @@ int main(int argc, char **argv)
     //the setpoint publishing rate MUST be faster than 2Hz
     ros::Rate rate(20.0);
 
-    float setpoint_x = 0;
-    float setpoint_y = 0;
-    float setpoint_z = 0;
+    //float setpoint_x = 0;
+    //float setpoint_y = 0;
+    //float setpoint_z = 0;
 
     //get setpoint from launch file
-    nh.getParam("/offb_node/drone_setpoint/x", setpoint_x);
-    nh.getParam("/offb_node/drone_setpoint/y", setpoint_y);
-    nh.getParam("/offb_node/drone_setpoint/z", setpoint_z);
+    //nh.getParam("/offb_node/drone_setpoint/x", setpoint_x);
+    //nh.getParam("/offb_node/drone_setpoint/y", setpoint_y);
+    //nh.getParam("/offb_node/drone_setpoint/z", setpoint_z);
 
-    ROS_INFO("Got setpoint: [%.2f, %.2f, %.2f]", setpoint_x, setpoint_y, setpoint_z);
+    //ROS_INFO("Got setpoint: [%.2f, %.2f, %.2f]", setpoint_x, setpoint_y, setpoint_z);
 
     // wait for FCU connection
     while(ros::ok() && !current_state.connected){
@@ -50,9 +50,13 @@ int main(int argc, char **argv)
     }
 
     geometry_msgs::PoseStamped pose;
-    pose.pose.position.x = setpoint_x;
-    pose.pose.position.y = setpoint_y;
-    pose.pose.position.z = setpoint_z;
+    //pose.pose.position.x = setpoint_x;
+    //pose.pose.position.y = setpoint_y;
+    //pose.pose.position.z = setpoint_z;
+    pose.pose.position.x = 0;
+    pose.pose.position.y = 0;
+    pose.pose.position.z = 0.5;
+
 
     //send a few setpoints before starting
     for(int i = 100; ros::ok() && i > 0; --i){

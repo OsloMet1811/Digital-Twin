@@ -1,0 +1,2 @@
+rosbagTimestamp,transforms,-,header,seq,stamp,secs,nsecs,frame_id,child_frame_id,transform,translation,x,y,z,rotation,x,y,z,w,-,header,seq,stamp,secs,nsecs,frame_id,child_frame_id,transform,translation,x,y,z,rotation,x,y,z,w
+1520440529104124480,,,0,,1520440515,994896060,"""local_origin""","""local_origin_ned""",,,0.0,0.0,0.0,,0.707106781187,0.707106781187,4.32978028118e-17,4.32978028118e-17,,0,,1520440515,994928738,"""fcu""","""fcu_frd""",,,0.0,0.0,0.0,,1.0,0.0,0.0,6.12323399574e-17
