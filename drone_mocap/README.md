@@ -156,3 +156,4 @@ roslaunch drone_mocap drone_mocap.launch
 
 Results
 -------
+![Plot of drone flight position](../images/drone_flight_position.png)
