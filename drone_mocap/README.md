@@ -6,8 +6,8 @@ Here we try to document our road from out of the box Intel Aero drone, to a work
 The Optitrack Motion capture software, Motive Tracker, will stream pose data of the registered rigid-bodies over VRPN. This will be received by a VRPN ROS node and redirected to the correct topic. The MAVROS ROS node is used to communicate with the px4 autopilot software in the drone, using the MAVlink protocol. With the QGroundControl, a interface for the px4 software, we will enable the use of motion capture data, and disable the use of  e.g. gyro and gps. This will render the Intel drone completely dependent on the motion capture data for determining its position, as the mocap system is very accurate (< 0.2 mm).
 
 When this is done, we will use our own ROS package, running a c++ script, enabling the px4 flight mode OFFBOARD, arming it and set the Setpoint of the drone.
- 
- 
+
+
 Table of contents
 -----------------
 
@@ -15,7 +15,7 @@ Table of contents
 2. [Getting started](#getting-started)
 3. [First autonomous flight](#first-autonomous-flight)
 4. [Results](#results)
- 
+
 Prerequisites
 -------------
 
@@ -30,10 +30,9 @@ Prerequisites
 * ROS Kinetic
 
 ### ROS packages
-* VPRN Client ROS 
+* VPRN Client ROS
 * Mavros
- 
- 
+
 Getting started
 ---------------
 
@@ -82,13 +81,13 @@ chmod +x ./QGroundControl.AppImage
 ./QGroundControl.AppImage  (or double click)
 ```
 
-#### VPRN client 
-[Install ROS package VRPN client ROS.](http://wiki.ros.org/vrpn_client_ros) 
+#### VPRN client
+[Install ROS package VRPN client ROS.](http://wiki.ros.org/vrpn_client_ros)
 ```sh
 sudo apt-get install ros-kinetic-vrpn-client-ros
 ```
 
-#### Mavros 
+#### Mavros
 [Install ROS package mavros.](https://github.com/mavlink/mavros/blob/master/mavros/README.md#installation)
 ```sh
 sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
