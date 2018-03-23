@@ -7,6 +7,8 @@ The Optitrack Motion capture software, Motive Tracker, will stream pose data of 
 
 When this is done, we will use our own ROS package, running a c++ script, enabling the px4 flight mode OFFBOARD, arming it and set the Setpoint of the drone.
 
+[![Youtube film of Intel Aero in action](https://youtu.be/iysofezsteA)](https://youtu.be/iysofezsteA)
+
 Table of contents
 -----------------
 
