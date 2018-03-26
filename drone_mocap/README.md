@@ -155,5 +155,5 @@ roslaunch drone_mocap drone_mocap.launch
 
 Results
 -------
-<img src="../images/drone_flight_position.png" alt="alt text" width="400">
+<img src="../images/drone_flight_position.png" alt="alt text" width="800">
 Flight controlled offboard to hold a setpoint. The result showed in a 1 m3 cube made of ~5000 measurements over 58s.
